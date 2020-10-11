@@ -72,7 +72,7 @@ passport.deserializeUser(function(id, done) {
 });
 
 //Mongoose databse setup
-mongoose.connect('mongodb+srv://NewDiet:Ds8762402382465@cluster0.sbfkl.mongodb.net/EcomDB?retryWrites=true&w=majority', {useNewUrlParser: true, useUnifiedTopology: true});
+mongoose.connect('Your mongo database address', {useNewUrlParser: true, useUnifiedTopology: true});
 
 var customerModel = require('./models/customer');
 var productModel = require('./models/product');
